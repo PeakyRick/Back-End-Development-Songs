@@ -51,7 +51,7 @@ def parse_json(data):
 ######################################################################
 # INSERT CODE HERE
 @app.route("/health")
-def healthz():
+def health():
     return jsonify(dict(status="OK")), 200
 
 @app.route("/count")
